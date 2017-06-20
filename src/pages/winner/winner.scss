@@ -1,0 +1,15 @@
+page-winner {
+
+  header { position: fixed; top:0; left:0; width:100%; height: 80px; background: $color-soft-green url('../assets/img/logo.png') top 10px center/ auto 60px no-repeat;padding-top: 80px; color: $color-white;}
+  font-family: 'Lakes';
+
+
+  span.button {background:red; font-size: 0.5em;background: $color-dark-green; color: $color-soft-green;padding: 10px 20px;line-height: 0.6em;}
+
+  .winner {float:left; width:100%; margin-top: 80px; background-color: $color-soft-green;
+
+    .cup {float:left; width: 100%; height: calc(100vh - 200px);background: url('../assets/img/winner.png') center center/ auto 80% no-repeat;}
+    .info {float:left; width: 100%; height: 120px; text-align: center; color:$color-white;text-transform: uppercase; font-size: 2em; line-height: 1.6em;}
+
+  }
+}

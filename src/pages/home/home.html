@@ -1,0 +1,48 @@
+<ion-header>
+  <header>
+  <div class="header_team">
+    <div class="top">
+      <div class="name">{{team_name_1}}</div>
+      <div class="score">{{counter_1}}</div>
+      <div class="points">
+        <div class="half plus" (click)="plus_un(1)"></div>
+        <div class="half moins" (click)="moins_un(1)"></div>
+      </div>
+    </div>
+    <div class="arrow"></div>
+  </div>
+  <div class="header_team">
+    <div class="top">
+      <div class="name">{{team_name_2}}</div>
+      <div class="score">{{counter_2}}</div>
+      <div class="points">
+        <div class="half plus" (click)="plus_un(0)"></div>
+        <div class="half moins" (click)="moins_un(0)"></div>
+      </div>
+    </div>
+    <div class="arrow"></div>
+  </div>
+  </header>
+</ion-header>
+
+<ion-content>
+
+  <div class="box">
+
+    <div id="main" class="game">
+
+      <div class="team__content">
+        <div *ngFor="let box of boxes.team_1">
+          <div class="action {{box.class}}"></div>
+        </div>
+      </div>
+      <div class="team__content">
+				<div *ngFor="let box of boxes.team_2">
+          <div class="action {{box.class}}"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

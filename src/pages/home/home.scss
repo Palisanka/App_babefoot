@@ -1,0 +1,111 @@
+page-home {
+
+  font-family: 'Lakes';
+
+  ion-header {
+    background-color: #2e9284;
+    padding:15px;
+  }
+
+  ion-title {
+    background-color: #2e9284;
+  }
+
+  .team {
+
+    color: white;
+    position: relative;
+
+    &__container {
+      position: relative;
+      width: 50%;
+      float: left;
+      text-align: center;
+      background-color: #1a564d;
+      //margin-top: 30px;
+      &:after{
+        content: '';
+        position: absolute;
+        background-image: url(../assets/img/arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: -50px;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 38px;
+        height: 50px;
+      }
+    }
+
+    &__name {
+      font-size: 20px;
+      padding:10px;
+    }
+
+    &__counter {
+      font-size: 50px;
+      padding:0 10px 10px 10px;
+
+      &__plus {
+        float: left;
+        width: 50%;
+        background-color: black;
+        color: #2e9284;
+        padding: 10px;
+      }
+    }
+
+  }
+
+  .box {
+
+    &__container {
+      width:50%;
+      float: left;
+    }
+
+    &__item {
+      width:100%;
+      background-color: #0000fe;
+      height:150px;
+    }
+
+  }
+
+  .game {
+
+
+  }
+
+  .header-md::after {
+    background-image: none !important;
+  }
+
+  header { position: fixed; top:0; left:0; width:100%; height: 80px; background: $color-soft-green url('../assets/img/logo.png') top 10px center/ auto 60px no-repeat;padding-top: 80px; color: $color-white;}
+
+  #main {float:left; width: 100%; min-height: 100vh;border : 3px 0px solid $color-soft-green; padding: 188px 0 0;overflow: hidden;}
+
+  .header_team {float:left; width: 50%; text-align:center; text-transform: uppercase;
+
+    .top {float:left; width:100%;border: 3px solid $color-soft-green ;background: $color-dark-green;padding: 15px 0px 0;}
+    .name {font-size: 1em; line-height: 1.2em; }
+    .score {font-size: 3em; line-height: 1em;}
+    .points {float:left; position:relative; width: calc(100% - 6px); height: 50px;background: $color-black url('../assets/img/separation.png') center center/ 2px auto no-repeat;margin: 10px 3px 0;}
+    .half {float:left; width:50%;height: 100%;}
+    .plus {background: url('../assets/img/+1.png') center center/ 50px auto no-repeat;}
+    .moins {background: url('../assets/img/-1.png') center center/ 50px auto no-repeat;}
+    .arrow {float:left; width: 100%; height: 30px; background: url('../assets/img/arrow.png') top center/ 30px auto no-repeat;margin-top:-3px;}
+
+  }
+
+
+  .team__content {float:left; width: 50%; height: calc(100vh - 188px) ;border: 3px solid $color-soft-green;background: $color-soft-green;overflow-y: scroll;}
+
+  .action {float:left; width: 100%; height: 150px; border-radius: 30px; margin-bottom: 6px;}
+  .action1 {background: $color-action-1 url('../assets/img/regle_a.png') center center/ 60% auto no-repeat;}
+  .action2 {background: $color-action-2 url('../assets/img/regle_b.png') center center/ 60% auto no-repeat;}
+  .action3 {background: $color-action-3 url('../assets/img/regle_c.png') center center/ 60% auto no-repeat;}
+  .action4 {background: $color-action-5 url('../assets/img/regle_d.png') center center/ 60% auto no-repeat;}
+  .action5 {background: $color-action-4 url('../assets/img/regle_e.png') center center/ 60% auto no-repeat;}
+
+}

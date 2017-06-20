@@ -1,0 +1,19 @@
+<header>
+
+</header>
+
+<div class="login">
+
+  <ion-item>
+    <ion-input type="text" placeholder="Nom Équipe 1" [(ngModel)]="team1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Nom Équipe 2" [(ngModel)]="team2"></ion-input>
+  </ion-item>
+
+  <!--<input type="text" name="team1" onfocus="if (this.value=='Nom Équipe 1') this.value = ''" value="Nom Équipe 1">-->
+  <!--<input type="text" name="team2" onfocus="if (this.value=='Nom Équipe 2') this.value = ''" value="Nom Équipe 2">-->
+  <input type="submit" value="C'EST PARTI !" (click)="go()">
+
+</div>
